@@ -1,0 +1,45 @@
+:root {
+    --color-bg: #0B0B0F;
+    --color-primary: #C20501;
+    --color-text: #EDE8E8;
+    --color-text-muted: rgba(237, 232, 232, 0.7);
+    --color-border: rgba(237, 232, 232, 0.1);
+    
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    
+    --font-weight-semibold: 500;
+    --font-weight-bold: 700;
+    
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 48px;
+    --font-size-4xl: 64px;
+    --font-size-5xl: 96px;
+    
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    --spacing-2xl: 64px;
+    --spacing-3xl: 96px;
+    
+    --container-max-width: 1536px;
+    --container-padding: 48px;
+    
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    
+    --z-header: 100;
+    --z-slider: 50;
+    --z-modal: 200;
+}

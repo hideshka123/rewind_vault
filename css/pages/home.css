@@ -1,0 +1,132 @@
+.hero-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1536px;
+    height: 631px;
+    margin: 80px auto 0;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.slide--active {
+    opacity: 1;
+}
+
+.slide__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(11, 11, 15, 0.95) 0%, rgba(11, 11, 15, 0.3) 100%);
+}
+
+.slide__content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px; 
+    padding-top: 200px;
+}
+
+.slide__title {
+    font-family: var(--font-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: 0.95;
+    margin-bottom: var(--spacing-lg);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide__title-top {
+    font-size: 45px;  
+    font-weight: var(--font-weight-bold);
+}
+
+.slide__title-bottom {
+    font-size: 90px;  
+    font-weight: var(--font-weight-bold);
+}
+
+.slide__description {
+    font-size: var(--font-size-lg);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text);
+    max-width: 600px;
+}
+
+.slider__controls {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.slider__dot {
+    width: 48px;
+    height: 4px;
+    background-color: rgba(237, 232, 232, 0.3);
+    border-radius: 2px;
+    transition: background-color var(--transition-fast);
+}
+
+.slider__dot--active {
+    background-color: var(--color-primary);
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.new-releases {
+    background-color: var(--color-bg);
+    padding: var(--spacing-2xl) 0;
+}
+
+.most-popular {
+    background-color: var(--color-bg);
+    padding: var(--spacing-2xl) 0 var(--spacing-3xl);
+}
+
+.movie-card__details {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+    z-index: 5;
+}
+
+.movie-card:hover .movie-card__details {
+    opacity: 1;
+}
