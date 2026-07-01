@@ -7,7 +7,7 @@
 1. Установите XAMPP (Apache + MySQL + PHP 8.0+)
 2. Скопируйте папку `rewind_vault` в `C:\xampp\htdocs\`
 3. Запустите Apache и MySQL в XAMPP Control Panel
-4. Импортируйте БД `rewind_vault.sql` через phpMyAdmin (http://localhost/phpmyadmin)
+4. Импортируйте БД `movie_lovers_platform.sql` через phpMyAdmin (http://localhost/phpmyadmin)
 5. Откройте http://localhost/rewind_vault/
 
 ## Технологии
